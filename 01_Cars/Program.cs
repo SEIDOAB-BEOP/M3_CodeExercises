@@ -31,7 +31,8 @@ class Program
         var rnd = new csSeedGenerator();
 
         //A random enCarColor
-        Console.WriteLine(rnd.FromEnum<enCarColor>());
+        enCarColor rndColor = rnd.FromEnum<enCarColor>();
+        Console.WriteLine(rndColor.ToString());
 
         //A random enCarBrand
         Console.WriteLine(rnd.FromEnum<enCarBrand>());
