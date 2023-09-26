@@ -19,12 +19,14 @@ class Program
 //    Form: Rund, Droppformad
 //    Typ: Sötvatten, Saltvatten
 //
-// 2. Skapa en ToString i din pärlklass som presenterar pärlan.
+// 2. När pärlan väl är skapad så ska man inte kunna ändra den.
 //
-// 3. Skapa ett halsband bestående av 10 pärlor av slumpmässig storlek, färg
+// 3. Skapa en ToString i din pärlklass som presenterar pärlan.
+//
+// 4. Skapa ett halsband bestående av 10 pärlor av slumpmässig storlek, färg
 //    form, och typ
 //
-// 4. Vilken färg, form och typ har den minsta och den största pärlan i halsbandet?
+// 5. Vilken färg, form och typ har den minsta och den största pärlan i halsbandet?
 //
 
 
