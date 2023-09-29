@@ -60,3 +60,13 @@ class Program
 
 //7. Modify the setter in Name so an Error is thrown if the new name is null or ""
 
+
+// --- Gör tills 4 Oktober
+// 8. Gör om construtor csFriend() så att den tar en parameter (csSeedGenerator _seeder).
+//    Instantiera csSeedGeneratorn i Main() och modifiera koden så att den fungerar som innan.
+//
+// 10. Deklarera en Copy constructor.
+//
+// 11. Använd copy constructorn för att skapa en ny lista av 10 vänner som är en kopia
+//     av ursprungslistan
+

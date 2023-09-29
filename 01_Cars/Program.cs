@@ -65,8 +65,19 @@ class Program
     //7. Modify the properties of Brand and Model so they can also be set during
     //   Object initialization, i.e.  new Car(){ Model = ..., Brand = ...}
 
-    //8. Create an array of 1000 cars, all of Color Burgundy.
+    //8. Create an array of 10 cars, all of Color Burgundy.
 
     //9. Change class Car to struct Car and run the program again.
+
+
+    // --- Gör tills 4 Oktober
+    // 10. Gör om construtor csCar() så att den tar en parameter (csSeedGenerator _seeder).
+    //    Instantiera csSeedGeneratorn i Main() och modifiera koden så att den fungerar som innan.
+    //
+    // 11. Deklarera en construktor som tillåter dig att själv bestämma alla csCar public properties
+    //
+    // 12. Deklarera en Copy constructor.
+    //
+    // 13. Använd copy constructorn för att skapa en array av 10 bilar som är en kopia av ursprunget
 }
 
