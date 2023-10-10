@@ -50,7 +50,7 @@ namespace _05_Wines_Interfaces
                     _hiWine = wine;
                     _hiPrice = wine.Price;
                 }
-                if (wine.Price < _hiPrice)
+                if (wine.Price < _loPrice)
                 {
                     _loWine = wine;
                     _loPrice = wine.Price;
