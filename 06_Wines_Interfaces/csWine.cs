@@ -3,7 +3,7 @@ using Helpers;
 
 namespace _05_Wines_Interfaces
 {
-    
+    /*
 	public class csWine : IWine
 	{
 	}
@@ -11,6 +11,7 @@ namespace _05_Wines_Interfaces
     public struct stWine : IWine
     {
     }
+    */
     
 }
 
