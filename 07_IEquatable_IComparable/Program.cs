@@ -1,10 +1,45 @@
-﻿namespace _07_IEquatable_IComparable;
+﻿using Helpers;
+
+namespace _07_IEquatable_IComparable;
 
 class Program
 {
     static void Main(string[] args)
     {
         Console.WriteLine("07_IEquatable_IComparable");
+        var rnd = new csSeedGenerator();
+        var p1 = new csPearl(rnd);
+        Console.WriteLine(p1);
+
+        var p2 = new csPearl(rnd);
+        Console.WriteLine(p2.GetHashCode());
+
+        var p2_copy = new csPearl(p2);
+        Console.WriteLine(p2_copy.GetHashCode());
+
+        Console.WriteLine(p2_copy.Equals(p2));
+
+        Console.WriteLine(p2_copy == p2);
+
+        var n1 = new csNecklace(5, "my necklace");
+        n1.ListOfPearls.Sort();
+        Console.WriteLine(n1);
+
+        var n2 = new csNecklace(5, "my necklace");
+        n2.ListOfPearls.Sort();
+        Console.WriteLine(n2);
+
+        Console.WriteLine(n1.Equals(n2));
+
+        var n3 = new csNecklace(n2);
+
+         n3.ListOfPearls[0].Size = 50;
+        //n3.ListOfPearls[0] = new csPearl(rnd);
+        Console.WriteLine(n2.ListOfPearls[0]);
+        Console.WriteLine(n3.ListOfPearls[0]);
+
+        //Console.WriteLine(n2.Equals(n3));
+
     }
 }
 

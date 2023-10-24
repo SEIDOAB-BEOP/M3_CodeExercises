@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_Wines_Interfaces", "06_W
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_IEquatable_IComparable", "07_IEquatable_IComparable\07_IEquatable_IComparable.csproj", "{5B93C110-1B04-409D-894F-41CD10C8B625}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_hashset_factory_switchexpr", "08_hashset_factory_switchexpr\08_hashset_factory_switchexpr.csproj", "{3C7677CA-1E58-4FC0-85BA-DC26C8BC31A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{5B93C110-1B04-409D-894F-41CD10C8B625}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B93C110-1B04-409D-894F-41CD10C8B625}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B93C110-1B04-409D-894F-41CD10C8B625}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C7677CA-1E58-4FC0-85BA-DC26C8BC31A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C7677CA-1E58-4FC0-85BA-DC26C8BC31A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C7677CA-1E58-4FC0-85BA-DC26C8BC31A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C7677CA-1E58-4FC0-85BA-DC26C8BC31A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

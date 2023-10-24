@@ -1,7 +1,7 @@
 ﻿using System;
 using Helpers;
 
-namespace _05_Wines_Interfaces
+namespace _07_IEquatable_IComparable
 {
     public enum enGrapeType { Reissling, Tempranillo, Chardonay, Shiraz, CabernetSavignoin, Syrah }
     public enum enWineType { Red, White, Rose }

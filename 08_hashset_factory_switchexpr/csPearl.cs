@@ -3,7 +3,7 @@ using System.Reflection;
 using System.Runtime.ConstrainedExecution;
 using Helpers;
 
-namespace _07_IEquatable_IComparable
+namespace _08_hashset_factory_switchexpr
 {
     public enum enPearlColor { Black, White, Pink }
     public enum enPearlShape { Round, DropShaped }
@@ -12,31 +12,36 @@ namespace _07_IEquatable_IComparable
     #region Pearl as a class
     public class csPearl : IEquatable<csPearl>, IComparable<csPearl>
     {
-        public int Size { get; set; }
+        public int Size { get; init; }
         public enPearlColor Color { get; init; }
         public enPearlShape Shape { get; init; }
         public enPearlType Type { get; init; }
 
         public override string ToString() => $"{Size}mm {Color} {Shape} {Type} pearl.";
 
+        #region Implementation of IEquatable<T> interface
         public bool Equals(csPearl other) => (this.Size, this.Color, this.Shape, this.Type) ==
-            (other.Size, other.Color, other.Shape, other.Type);
+           (other.Size, other.Color, other.Shape, other.Type);
 
         //Needed to implement as part of IEquatable
         public override bool Equals(object obj) => Equals(obj as csPearl);
         public override int GetHashCode() => (this.Size, this.Color, this.Shape, this.Type).GetHashCode();
-
-        
-        public int CompareTo(csPearl other)
-        {
-                 return other.Size.CompareTo(this.Size);
-
-        }
-
+        #endregion
 
         #region operator overloading
         public static bool operator ==(csPearl o1, csPearl o2) => o1.Equals(o2);
         public static bool operator !=(csPearl o1, csPearl o2) => !o1.Equals(o2);
+        #endregion
+
+        #region Implementation IComparable<T> interface
+        public int CompareTo(csPearl other)
+        {
+            //Sort on Make -> Model -> Year
+            if (this.Size != other.Size)
+                return this.Size.CompareTo(other.Size);
+
+            return this.Type.CompareTo(other.Type);
+        }
         #endregion
 
         public csPearl() { }

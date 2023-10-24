@@ -1,5 +1,5 @@
 ﻿using System;
-namespace _05_Wines_Interfaces
+namespace _07_IEquatable_IComparable
 {
     public class WineCellar
     {
