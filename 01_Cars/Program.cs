@@ -48,7 +48,7 @@ class Program
     //   "I am a Red Ford Mustang_GT";
 
     //5. In Main(), create two variables, car1, car2 and instantiate from csCar
-    //   - printout WhoAmI of car1 and car2
+    //   - present car1 and car2
 
     //6. Modify the properties Color, Brand and Model so that only Color can change
     //   when the instance is created, not afterwards
