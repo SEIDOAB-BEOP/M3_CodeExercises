@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Security.Cryptography;
 using System.Text;
-
+using Models;
 using Seido.Utilities.SeedGenerator;
 
 namespace _03_Pearls;
@@ -10,7 +10,39 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        Console.WriteLine("Hello Pearls!");
+        var _seeder = new csSeedGenerator();
+
+        var p = new csPearl(_seeder);
+        var p1 = new csPearl(_seeder) { Type = enPearlType.SaltWater };
+        var p2 = new csPearl(7, enPearlColor.White, enPearlShape.DropShaped, enPearlType.SaltWater);
+        System.Console.WriteLine(p);
+        System.Console.WriteLine(p1);
+        System.Console.WriteLine(p2);
+
+        System.Console.WriteLine("Reference copy");
+        var p3 = p2;
+        p3.Size = 20;
+        System.Console.WriteLine(p2);
+        System.Console.WriteLine(p3);
+
+        System.Console.WriteLine("Deep copy");
+        var p4 = new csPearl(p2);
+        p4.Size = 5;
+        System.Console.WriteLine(p2);
+        System.Console.WriteLine(p4);
+        
+        
+        System.Console.WriteLine("\nNecklace");
+        var n = new csNecklace(_seeder, 10);
+        System.Console.WriteLine(n);
+
+        var n1 = new csNecklace(n);
+        System.Console.WriteLine(n1);
+
+        (csPearl pmin, csPearl pmax) = n1.MaxMin();
+        System.Console.WriteLine(pmin);
+        System.Console.WriteLine(pmax);
     }
 }
 
