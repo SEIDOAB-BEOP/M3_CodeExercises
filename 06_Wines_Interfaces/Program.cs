@@ -14,14 +14,14 @@ class Program
         IWineCellar wineCellar = null;
         //IWineCellar wineCellar = new csWineCellar("Martin's wine cellar", rnd, 20);
 
-        Console.WriteLine($"\nWinecellar: {wineCellar.Name}");
+        Console.WriteLine($"\nWinecellar: {wineCellar?.Name}");
         Console.WriteLine(wineCellar);
 
-        Console.WriteLine($"Value of winecellar: {wineCellar.Value:N2} Sek");
+        Console.WriteLine($"Value of winecellar: {wineCellar?.Value:N2} Sek");
 
-        var hilo = wineCellar.WineHiLo();
-        Console.WriteLine($"\nMost expensive wine:\n{hilo.mostExpensive}");
-        Console.WriteLine($"Least expensive wine:\n{hilo.cheepest}");
+        var hilo = wineCellar?.WineHiLo();
+        Console.WriteLine($"\nMost expensive wine:\n{hilo?.mostExpensive}");
+        Console.WriteLine($"Least expensive wine:\n{hilo?.cheepest}");
     }
 }
 
