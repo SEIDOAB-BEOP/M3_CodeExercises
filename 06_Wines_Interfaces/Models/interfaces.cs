@@ -21,7 +21,8 @@ namespace Models
     {
         public string Name { get; set; }
         public List<IWine> Wines { get; set; }
-
+        public void Add(IWine wine);
+        public int Count {get;}
         public decimal Value { get;}
 
         public (IWine mostExpensive, IWine cheepest) WineHiLo(); 
