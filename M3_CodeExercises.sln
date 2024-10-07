@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Pearls", "03_Pearls\03_P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_wines", "04_wines\04_wines.csproj", "{4AC18C32-1A2B-4D4B-879F-9A2950C4A3A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_chefs", "05_chefs\05_chefs.csproj", "{6FE1AD9D-F9C2-4470-B6B2-6036393B7EC8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_Inheritance", "05_Inheritance\05_Inheritance.csproj", "{6FE1AD9D-F9C2-4470-B6B2-6036393B7EC8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_Wines_Interfaces", "06_Wines_Interfaces\06_Wines_Interfaces.csproj", "{69F47CD7-05BD-4DEA-93A2-85645938E8FF}"
 EndProject
