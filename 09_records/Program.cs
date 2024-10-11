@@ -1,15 +1,12 @@
 ﻿using System.Security.Cryptography;
 using System.Text;
+
+using Models;
 using Seido.Utilities.SeedGenerator;
 
 Console.WriteLine("Hello Pearls!");
 var _seeder = new csSeedGenerator();
 
-
-
-public enum enPearlColor { Black, White, Pink }
-public enum enPearlShape { Round, DropShaped }
-public enum enPearlType { FreshWater, SaltWater }
 
 //Exercise:
 // 1. Modellera en pärlan i en C# record. Utmärkande för en pärla är
