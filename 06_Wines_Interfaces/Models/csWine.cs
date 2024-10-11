@@ -12,6 +12,6 @@ namespace Models
                 public csWine (csSeedGenerator _seeder)
                 {
                 }
-        }  
+        }
 }
 
