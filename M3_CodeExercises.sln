@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_hashset_factory_switchex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_records", "09_records\09_records.csproj", "{5ECB5603-B900-44F7-88B4-442974FCE027}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_seeder", "10_seeder\10_seeder.csproj", "{EA05DEE2-613A-4CB1-ADFD-C29CD3FBC07E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{5ECB5603-B900-44F7-88B4-442974FCE027}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5ECB5603-B900-44F7-88B4-442974FCE027}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5ECB5603-B900-44F7-88B4-442974FCE027}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA05DEE2-613A-4CB1-ADFD-C29CD3FBC07E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA05DEE2-613A-4CB1-ADFD-C29CD3FBC07E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA05DEE2-613A-4CB1-ADFD-C29CD3FBC07E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA05DEE2-613A-4CB1-ADFD-C29CD3FBC07E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
