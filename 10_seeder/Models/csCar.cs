@@ -7,7 +7,7 @@ public enum enCarModel { Boxmodel, Mustang_GT, XF, Civic}
 
 public class csCar
 {
-    public enCarColor Color {get; init;}
+    public enCarColor Color {get; set;}
     public enCarBrand Brand {get; set;}
     public enCarModel Model {get; set;}
     

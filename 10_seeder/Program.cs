@@ -15,7 +15,7 @@ var _seeder = new csSeedGenerator();
    - Use ItemsToList to generate a list of 100 instances of csCar, csFriend, csPearl and csWine
 
 4. Explore csSeedGenerator public List<TItem> UniqueItemsToList<TItem>(int tryNrOfItems, List<TItem> appendToUnique = null)
-   - What interfaces are required to be implemented by a class to use ItemsToList?
+   - What interfaces are required to be implemented by a class to use UniqueItemsToList?
    - Use UniqueItemsToList to generate a list of unique 100 instances of csCar, csFriend, csPearl and csWine
  
 */

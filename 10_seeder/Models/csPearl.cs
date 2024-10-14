@@ -8,9 +8,9 @@ public enum enPearlType { FreshWater, SaltWater }
 public class csPearl
 {
     public int Size { get; set; }
-    public enPearlColor Color { get; init; }
-    public enPearlShape Shape { get; init; }
-    public enPearlType Type { get; init; }
+    public enPearlColor Color { get; set; }
+    public enPearlShape Shape { get; set; }
+    public enPearlType Type { get; set; }
 
     public override string ToString() => $"{Size}mm {Color} {Shape} {Type} pearl.";
 
