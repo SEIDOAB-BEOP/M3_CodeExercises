@@ -7,7 +7,7 @@ var rnd = new csSeedGenerator();
 
 //Instantiate and initialize a list
 var ints1 = new List<int>();
-for (int i = 0; i < 100; i++)
+for (int i = 0; i < 10; i++)
 {
     ints1.Add(rnd.Next(0,100));
 }
@@ -28,8 +28,12 @@ for (int i = 0; i < 1000; i++)
     var idx1 = rnd.Next(0, ints1.Count);
     var idx2 = rnd.Next(0, ints1.Count);
     
-    ///swap using tupples
-    (ints1[idx1], ints1[idx2]) = (ints1[idx2], ints1[idx1]);
+    //swap using tupples
+    //(ints1[idx1], ints1[idx2]) = (ints1[idx2], ints1[idx1]);
+    //swap temporary variable
+    var t = ints1[idx1];
+    ints1[idx1]= ints1[idx2];
+    ints1[idx2]= t;
 }
 System.Console.WriteLine($"{nameof(ints1)} contains {ints1.Count} ints");
 ints1.ForEach(i => System.Console.WriteLine(i));
@@ -37,12 +41,14 @@ ints1.ForEach(i => System.Console.WriteLine(i));
 
 //Get unique ints
 System.Console.WriteLine("\nUnique items List");
-var intsUnique = new HashSet<int>(ints1);
+var intsUnique = new SortedSet<int>(ints1);
 System.Console.WriteLine($"{nameof(intsUnique)} contains {intsUnique.Count} ints");
 intsUnique.ToList().ForEach(i => System.Console.WriteLine(i));
 
 //Does the list contain duplicates?
-System.Console.WriteLine($"\n{nameof(ints1)} contains duplicates: {false}");
+System.Console.WriteLine($"\n{nameof(ints2)} contains duplicates: {ints2.Count > intsUnique.Count}");
+
+ 
 
 //Use Dictionary to Get Nr of pieces of each int
 System.Console.WriteLine("\nNr of pieces of each ints");
@@ -69,16 +75,41 @@ nrInts.ToList().ForEach(item =>
     {
         intsDuplicates.Add(item.Key);
     }
+
 });
 
-intsDuplicates.ForEach(i => System.Console.WriteLine(i));
-System.Console.WriteLine($"{nameof(intsDuplicates)} contains {intsDuplicates.Count} ints");
+// System.Console.WriteLine("\ntripplets");
+// var intstripplets = new List<int>();
+// nrInts.ToList().ForEach(item => 
+// {
+//     if (item.Value >= 3)
+//     {
+//         intstripplets.Add(item.Key);
+//     }
+// });
 
+// System.Console.WriteLine("\nQuads");
+// var intsquads = new List<int>();
+// nrInts.ToList().ForEach(item => 
+// {
+//     if (item.Value >= 4)
+//     {
+//         intsquads.Add(item.Key);
+//     }
+// });
+
+bool dub = nrInts.ContainsValue(2);
+bool tre = nrInts.ContainsValue(3);
+bool qud = nrInts.ContainsValue(4);
+
+
+intsDuplicates.ForEach(i => System.Console.WriteLine(i));
+System.Console.WriteLine($"\n{nameof(intsDuplicates)} contains {intsDuplicates.Count} ints");
 
 //Does the list contain pairs, tripplets, quad?
-System.Console.WriteLine($"\n{nameof(ints1)} contains pairs: {false}");
-System.Console.WriteLine($"\n{nameof(ints1)} contains tripplets: {false}");
-System.Console.WriteLine($"\n{nameof(ints1)} contains quads: {false}");
+System.Console.WriteLine($"\n{nameof(ints1)} contains pairs: {dub}");
+System.Console.WriteLine($"\n{nameof(ints1)} contains tripplets: {tre}");
+System.Console.WriteLine($"\n{nameof(ints1)} contains quads: {qud}");
 
 
 
