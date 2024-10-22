@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_collections", "11_collec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12_patterns", "12_patterns\12_patterns.csproj", "{727B3CAC-FA2B-4916-B236-B06F9EEA20F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13_Repetition", "13_Repetition\13_Repetition.csproj", "{2C15FE49-0DAF-4915-987F-CFD6E77983A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{727B3CAC-FA2B-4916-B236-B06F9EEA20F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{727B3CAC-FA2B-4916-B236-B06F9EEA20F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{727B3CAC-FA2B-4916-B236-B06F9EEA20F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C15FE49-0DAF-4915-987F-CFD6E77983A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C15FE49-0DAF-4915-987F-CFD6E77983A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C15FE49-0DAF-4915-987F-CFD6E77983A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C15FE49-0DAF-4915-987F-CFD6E77983A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
