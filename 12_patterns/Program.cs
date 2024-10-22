@@ -21,7 +21,7 @@ var _seeder = new csSeedGenerator();
       - private static field _instace
       - public static get property Instance that:
           if _instance is null creates a ZebraNecklace with 20 pearls
-          if _nstance is not null returns the instance
+          if _instance is not null returns the instance
       - make all constructors private
 
 6. Test by doing necklace1 = csNeclace.Instance; and necklace2 = csNeclace.Instance;
