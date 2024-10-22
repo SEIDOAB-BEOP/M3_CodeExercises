@@ -16,6 +16,14 @@ var _seeder = new csSeedGenerator();
 4. Use the methods to change the first two pearls and last two pearls to two small pink (3mmm) pearls
 
 5. Implement csNecklace to be a Singleton, i.e ones a Zebra necklace is created all other calls to to 
-   Zebra necklace shall give the same instance
+   Zebra necklace shall give the same instance.
+   Do the following steps peeking at M3_08_05
+      - private static field _instace
+      - public static get property Instance that:
+          if _instance is null creates a ZebraNecklace with 20 pearls
+          if _nstance is not null returns the instance
+      - make all constructors private
 
+6. Test by doing necklace1 = csNeclace.Instance; and necklace2 = csNeclace.Instance;
+7. Try adding and removing pearls from necklace1. You will see the changes also reflected in necklace2
 */ 
